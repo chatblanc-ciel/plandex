@@ -1,0 +1,22 @@
+[project]
+name = "llm-proxy"
+version = "0.1.0"
+description = "Proxy server for OpenAI and Google Gemini"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "httpx",
+    "python-dotenv",
+    "openai>=1.53.0",
+    "starlette>=0.41.2",
+    "pydantic>=2.9.2",
+    "google-cloud-aiplatform>=1.71.1",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "ruff>=0.7.1",
+]
